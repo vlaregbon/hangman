@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
- <!-- Added link to the jQuery Library -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
- <!-- Added a link to Bootstrap-->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- 
- <script type="text/javascript">
-  // This "document.ready" code isn't necessary in this example... but is useful to become familiar with.
-  // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
-  $(document).ready(function () {
-    var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
-    for (var i=0; i<letters.length; i++)
-    var letterused= $("<p>")
-        letterused.attr("data-letter", letters[i]);
-        letterused.text(letters[i]);
-    $("input").keyup(function(){
-      $("span").text([i]);
-    });
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
 
-  });
-</script>
+
 </head>
+
 <body>
-  <div class="jumbotron">
-
-    <h1 class="text-center">Can you Guess the letter!?!</h1>
-
-    <div class="text-center">
-
-      <!-- Here we have our button for generating random numbers (#random-button) -->
-      <img src="https://thumbs.dreamstime.com/b/fortune-teller-crystal-ball-9475144.jpg" width="150px" height="200"></img>
-      
-    </div>
-
-  </div>
   <div class="container">
-    <div class="row text-center">
-      <div class="col-sm-6">
-       
-        
-        <P>Wins: </P>
-        <P>Losses:<span>0</span></P>
-        <P>Guess This Round:</P>
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <strong>The Simpsons Trivia</strong>
+      </h1>
+      <h4 class="text-center"> A nobel spirit embeggins the smallest man</h4>
+      <hr>
 
-
-      </div>
-      <div class="col-sm-6">
-        ANSWER!
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"> </div>
+    <div class="col-sm-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center"></h3>
+        </div>
+          <div class="text-center">
+        </div>
+        <button class="buttonA">Start Game</button>
       </div>
     </div>
-
   </div>
+
   
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../hangman/assets/javascript/game.js"></script>
 </body>
+
 </html>
